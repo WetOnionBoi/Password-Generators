@@ -1,6 +1,6 @@
 import random
 from random import randint
-from string import ascii_letters
+from string import printable
 def main():
     password = ""
     num = 0
@@ -10,7 +10,7 @@ def main():
     while passLength != 0:
         passChar = randint(1,10)
         if passChar > 5:
-            passChar = random.choice(ascii_letters)
+            passChar = random.choice(printable)
             passList.append(passChar)
         else:
             passChar = randint(0,9)
